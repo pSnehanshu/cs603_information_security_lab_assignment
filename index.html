@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS603 - Information security</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./ceaser.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="my-2">
+            <h1>Lab Works: Information Security</h1>
+            <p>Submitted by Jyotishman Goswami (GAU-C-17/290)</p>
+        </div>
+
+        <!-- Ceaser -->
+        <div class="border p-3 rounded shadow mt-2" id="ceaser_block">
+            <h2>Ceaser cipher</h2>
+            <form id="ceaser_form" action="#" method="get">
+                Text: <input type="text" id="ceaser_text" class="form-control" placeholder="Enter a text to encrypt">
+                Key: <input type="number" id="ceaser_key" class="form-control" value="5" placeholder="Choose a key"
+                    min="0">
+                <button class="btn btn-primary mt-2">Get Ceaser</button>
+            </form>
+            <div class="mt-4 border p-3 rounded">
+                Result: <b id="ceaser_result"></b>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#ceaser_form').submit(function (e) {
+                e.preventDefault();
+                var text = $('#ceaser_text').val();
+                var key = parseInt($('#ceaser_key').val());
+                var ceaser_result = ceaser(text, key);
+                $('#ceaser_result').text(ceaser_result);
+            });
+        });
+    </script>
+</body>
+
+</html>
