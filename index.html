@@ -30,19 +30,19 @@
                 Result: <b id="ceaser_result"></b>
             </div>
         </div>
-    </div>
 
-    <script>
-        /* $(function () {
-            $('#ceaser_form').submit(function (e) {
-                e.preventDefault();
-                var text = $('#ceaser_text').val();
-                var key = parseInt($('#ceaser_key').val());
-                var ceaser_result = ceaser(text, key);
-                $('#ceaser_result').text(ceaser_result);
-            });
-        }); */
-    </script>
+        <!-- Playfair -->
+        <div class="border p-3 rounded shadow mt-2" id="ceaser_block">
+            <div>
+                <h2>Playfair cipher</h2>
+                Plain Text: <input type="text" id="pf_text" class="form-control" placeholder="Enter a text to encrypt">
+                Key: <input type="text" id="pf_key" class="form-control" placeholder="Choose a key" min="0">
+                Encrypted text: <input type="text" id="pf_enctxt" class="form-control"
+                    placeholder="Enter a text to encrypt">
+                <button id="pf_enc_btn" class="btn btn-primary mt-2">Encrypt</button>
+                <button id="pf_denc_btn" class="btn btn-primary mt-2">Decrypt</button>
+            </div>
+        </div>
 </body>
 
 </html>
