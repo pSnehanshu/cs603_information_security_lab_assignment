@@ -8,9 +8,11 @@
     "jquery": "^3.5.0"
   },
   "devDependencies": {
-    "browserify": "^16.5.1"
+    "browserify": "^16.5.1",
+    "static-server": "^2.2.1"
   },
   "scripts": {
+    "start": "npm run build && static-server",
     "build": "browserify main.js -o bundle.js"
   },
   "author": "Snehanshu Phukon (GAU-C-17/047)",
