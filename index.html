@@ -31,17 +31,27 @@
     </div>
 
     <!-- Playfair -->
-    <div class="border p-3 rounded shadow mt-2" id="ceaser_block">
-      <div>
-        <h2>Playfair cipher</h2>
-        Plain Text: <input type="text" id="pf_text" class="form-control" placeholder="Enter a text to encrypt">
-        Key: <input type="text" id="pf_key" class="form-control" placeholder="Choose a key" min="0">
-        Encrypted text: <input type="text" id="pf_enctxt" class="form-control" placeholder="Enter a text to encrypt">
-        <button id="pf_enc_btn" class="btn btn-primary mt-2">Encrypt</button>
-        <button id="pf_denc_btn" class="btn btn-primary mt-2">Decrypt</button>
-      </div>
-      <a href="http://www.npmjs.com/package/crypto-classic-playfair" target="_blank"
+    <div class="border p-3 rounded shadow mt-2" id="pf_block">
+      <h2>Playfair cipher</h2>
+      Plain Text: <input type="text" id="pf_text" class="form-control" placeholder="Enter a text to encrypt">
+      Key: <input type="text" id="pf_key" class="form-control" placeholder="Choose a key" min="0">
+      Encrypted text: <input type="text" id="pf_enctxt" class="form-control" placeholder="Enter a text to encrypt">
+      <button id="pf_enc_btn" class="btn btn-primary mt-2">Encrypt</button>
+      <button id="pf_denc_btn" class="btn btn-primary mt-2">Decrypt</button>
+      <a class="btn" href="http://www.npmjs.com/package/crypto-classic-playfair" target="_blank"
         rel="noopener noreferrer">Source</a>
+    </div>
+
+    <!-- DES -->
+    <div class="border p-3 rounded shadow mt-2" id="pf_block">
+      <h2>DES (un-functional)</h2>
+      Plain Text: <input type="text" id="des_text" class="form-control" placeholder="Enter a text to encrypt">
+      Key: <input type="text" id="des_key" class="form-control" placeholder="Choose a key" min="0">
+      Encrypted: <textarea type="text" id="des_enctxt" class="form-control" rows="10"
+        placeholder="Enter a text to encrypt"></textarea>
+      <button id="des_enc_btn" class="btn btn-primary mt-2">Encrypt</button>
+      <button id="des_denc_btn" class="btn btn-primary mt-2">Decrypt</button>
+      <a class="btn" href="https://github.com/indutny/des.js#readme" target="_blank" rel="noopener noreferrer">Source</a>
     </div>
 </body>
 

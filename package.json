@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "crypto-classic-playfair": "^1.0.0",
+    "des.js": "^1.0.1",
     "jquery": "^3.5.0"
   },
   "devDependencies": {
