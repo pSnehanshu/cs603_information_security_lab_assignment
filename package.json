@@ -7,9 +7,11 @@
     "crypto-classic-playfair": "^1.0.0",
     "jquery": "^3.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^16.5.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify main.js -o bundle.js"
   },
   "author": "Snehanshu Phukon (GAU-C-17/047)",
   "license": "MIT"

@@ -1,5 +1,6 @@
 const $ = require("jquery");
 const ceaser = require("./ceaser");
+const playfair = require("crypto-classic-playfair");
 
 $(function () {
   $("#ceaser_form").submit(function (e) {
