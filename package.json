@@ -1,0 +1,16 @@
+{
+  "name": "cs603_information_security_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "crypto-classic-playfair": "^1.0.0",
+    "jquery": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snehanshu Phukon (GAU-C-17/047)",
+  "license": "MIT"
+}
