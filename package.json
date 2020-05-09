@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "npm run build && static-server",
-    "build": "browserify main.js -o bundle.js"
+    "build": "browserify main.js -o output.js"
   },
   "author": "Snehanshu Phukon (GAU-C-17/047)",
   "license": "MIT"
